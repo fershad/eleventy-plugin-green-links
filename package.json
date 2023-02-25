@@ -1,0 +1,29 @@
+{
+  "name": "eleventy-plugin-green-links",
+  "version": "0.1.0",
+  "description": "An 11ty plugin which checks external links against The Green Web Foundation's Green Web dataset.",
+  "main": "src/.eleventy.js",
+  "scripts": {},
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "static-site-generator",
+    "static-site",
+    "website",
+    "blog",
+    "generator",
+    "11ty",
+    "green",
+    "green-web",
+    "sustainable",
+  ],
+  "author": "Fershad Irani <itsfish@fershad.com> (https://fershad.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@tgwf/co2": "^0.12.1",
+    "linkedom": "^0.14.22"
+  },
+  "engines": {
+    "node": ">= 12"
+  }
+}
