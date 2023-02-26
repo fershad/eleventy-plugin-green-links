@@ -23,7 +23,12 @@
     "@tgwf/co2": "^0.12.1",
     "linkedom": "^0.14.22"
   },
-  "engines": {
-    "node": ">= 12"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fershad/eleventy-plugin-green-links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fershad/eleventy-plugin-green-links/issues"
+  },
+  "homepage": "https://github.com/fershad/eleventy-plugin-green-links/issues"
 }
