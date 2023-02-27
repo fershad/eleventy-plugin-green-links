@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-green-links",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An 11ty plugin which checks external links against The Green Web Foundation's Green Web dataset.",
   "main": "src/.eleventy.js",
   "scripts": {},
