@@ -17,7 +17,6 @@ const greenLinks = async (html) => {
         //   Check if the hostnames are green
         const greenHostnames = await hosting.check(uniqueHostnames);
 
-        console.log(greenHostnames);
         //   Add the green attribute to the links
         allValidLinks.forEach((link) => {
             const hostname = new URL(link.href).hostname;
