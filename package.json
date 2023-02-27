@@ -1,7 +1,7 @@
 {
   "name": "eleventy-plugin-green-links",
   "version": "0.1.1",
-  "description": "An 11ty plugin which checks external links against The Green Web Foundation's Green Web dataset.",
+  "description": "An Eleventy plugin which checks if links on a website are hosted on verified green hosting providers from The Green Web Foundation's Green Web dataset.",
   "main": "src/.eleventy.js",
   "scripts": {},
   "keywords": [
