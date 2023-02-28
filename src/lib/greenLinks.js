@@ -2,7 +2,7 @@ const { parseHTML } = require('linkedom');
 const { hosting } = require('@tgwf/co2');
 
 function greenLinksSetup(config = {}) {
-  const { ignoreHostnames = [] } = config;
+  const { ignore = [] } = config;
 
     /**
    * @param {string} content
@@ -21,7 +21,7 @@ function greenLinksSetup(config = {}) {
                   const uniqueHostnames = [...new Set(allValidLinks.map((link) => new URL(link.href).hostname))];
 
                   //   Remove the hostnames that should be ignored
-                  ignoreHostnames.forEach((hostname) => {
+                  ignore.forEach((hostname) => {
                       const ignoreHostnameIndex = uniqueHostnames.indexOf(hostname);
                   if (ignoreHostnameIndex > -1) {
                       uniqueHostnames.splice(ignoreHostnameIndex, 1);
@@ -30,7 +30,6 @@ function greenLinksSetup(config = {}) {
             
                     //   Check if the hostnames are green
                     const greenHostnames = await hosting.check(uniqueHostnames);
-                    console.log(greenHostnames)
             
                     //   Add the green attribute to the links
                     allValidLinks.forEach((link) => {
