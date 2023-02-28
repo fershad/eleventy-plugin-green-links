@@ -34,14 +34,9 @@ You can use the plugin as it is if you've followed the installation steps. Howev
 
 ```js
 // .eleventy.js
-
-const greenLinks = require("eleventy-plugin-green-links");
-
-module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(greenLinks, {
-    ignore: ["fershad.com", "thegreenwebfoundation.org"],
-  });
-};
+eleventyConfig.addPlugin(greenLinks, {
+  ignore: ["fershad.com", "thegreenwebfoundation.org"],
+});
 ```
 
 ### Config object
