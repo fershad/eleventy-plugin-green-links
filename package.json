@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-green-links",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An Eleventy plugin which checks if links on a website are hosted on verified green hosting providers from The Green Web Foundation's Green Web dataset.",
   "main": "src/.eleventy.js",
   "scripts": {},
