@@ -36,8 +36,6 @@ function greenLinksSetup(config = {}) {
                         const hostname = new URL(link.href).hostname;
                         if (greenHostnames.includes(hostname)) {
                             link.setAttribute('data-green-link', 'true');
-                        } else if (!ignore.includes(hostname)) {
-                            link.setAttribute('data-green-link', 'false');
                         }
                     });
               } else {
